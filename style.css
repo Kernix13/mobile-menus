@@ -161,10 +161,6 @@ hr {
   transform: translateY(-8px) rotate(-45deg);
 }
 
-@media (min-width: 768px) {
-
-}
-
 @media (min-width: 962px) {
   header {
     background-color: var(--white);
