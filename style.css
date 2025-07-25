@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500&family=Open+Sans:wght@400;500&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --dark: #333333;
+  --dark-gray: #666666;
+  --gray: #888888;
+  --gray2: #cccccc;
+  --gray3: #aaaaaa;
+  --purple: #5805cc;
+  --color-lite: hsl(205, 54%, 92%);
+  --color-dark: #2d3250;
+  --link-hover: #8c6a02;
+  --footer-hover: rgb(211, 157, 58);
+
+  --green: hsl(93, 86%, 51%);
+  --orange: hsl(41, 98%, 57%);
+  --red: hsl(0, 97%, 75%);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  color: var(--dark);
+  line-height: 1.5;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--color-dark);
+  font-family: 'Lora', serif;
+  letter-spacing: 0.25rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  margin-bottom: 3rem;
+}
+
+hr {
+  margin: 3rem 0;
+}
+
+.container {
+  width: 87%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.logo {
+  color: var(--color-dark);
+  font-family: 'Dancing Script', Segoe script, cursive;
+  font-weight: 500;
+  letter-spacing: 0.125em;
+  font-size: 2.5rem;
+  -webkit-transition: color 500ms ease;
+  transition: color 500ms ease;
+  padding: 0.25em 0.5em;
+  border: 1px solid transparent;
+}
+
+/* mobile nav */
+.nav-bar {
+  min-height: 4.375em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+
+.nav-menu {
+  position: fixed;
+  left: -100%;
+  top: 4.375em;
+  flex-direction: column;
+  background-color: var(--white);
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.45);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.45);
+  transition: 750ms;
+}
+
+.nav-menu.active {
+  left: 0;
+}
+
+.nav-item {
+  margin: 1em 0;
+}
+
+.nav-link,
+.nav-link:visited {
+  color: var(--dark);
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 0.25em 0.5em;
+  border: 1px solid transparent;
+
+  transition: 400ms ease;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--link-hover);
+  outline: none;
+  border: 1px solid var(--link-hover);
+
+}
+
+.hamburger {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+.bar {
+  display: block;
+  background-color: #000;
+  width: 24px;
+  /* The following 2 properties are essential in creating the "X" */
+  height: 2px;
+  margin: 6px auto;
+
+  /* -webkit-transition: all 300ms ease;  */
+  transition: all 300ms ease-in-out;
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 962px) {
+  header {
+    background-color: var(--white);
+  }
+
+  .container {
+    width: 80%;
+    max-width: 1100px;
+  }
+
+  .nav-menu {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+    width: auto;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .logo {
+    letter-spacing: 0.125em;
+    font-size: 3rem;
+  }
+}
