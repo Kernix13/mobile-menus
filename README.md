@@ -4,7 +4,7 @@
 
 The project is to create different mobile menus that are accessible. There are 5 menus on this page that will have different entrances for mobile. The menus are accessible due to toggling of the ARIA attribute <code>aria-expanded</code>.
 
-All the all have "_magic_" numbers. That makes sense for all but menu 1. For menu 1 I think I will give the hamburger icon/button a z-index to make it appear over the menu when it comes down. The same will have to be dome for the other menus as well.
+All the all have "_magic_" numbers. That makes sense for all but menu 1. For menu 1 I dave the first ("from top") hamburger icon/button a z-index to make it appear over the menu when it comes down. I originally had the menu come below the "logo" and hamburger icon, but it now is positioned at the top.
 
 1. Mobile menu 1 comes from the top.
 2. Mobile menu 2 comes from the right.
@@ -13,16 +13,17 @@ All the all have "_magic_" numbers. That makes sense for all but menu 1. For men
 5. Mobile menu 5: left sidebar from top, 10% width, 100% height
 6. TO-DO: I would like to make a menu that opens full-sreen and starts as a circle. I believe it's with a width & height of 200% and border-radisu of 50% - coming soon.
 
-> NOTE: It looks like `7rem` is the number to add to the `top` property if you want to add more. Also,
+## Important Notes
 
+- I have the hamburger icon too far out from the edge of the page - it should be moved in IMO.
+- It looks like `7rem` is the number to add to the `top` property if you want to add more. I have have that so that I can have multiple headers/menus on one page.
 - I need to add `margin` between the menu items because `gap` and `justify-content` were not working, even though they are flex containers?!?
-- Just download the files and open `index.html` in the browser.
 - I set the media query breakpoing high (`1300px`) so you can test the menus on desktop.
 - Use DevTools to see the toggling of `true`/`false` for the `aria-expanded` attribute on the `<button>`.
+- **The sidebar menus entrances seem to be "sluggish" for the entrance?!?**
+- Just download the files and open `index.html` in the browser.
 
-**NOTE**: The sidebar menu entrances seem to be "sluggish" for the entrance?!?
-
-## Basic layout
+## Basic HTML structure
 
 ```html
 <body>

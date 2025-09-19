@@ -58,16 +58,22 @@ header {
   padding: 1.5rem 0;
 }
 
-// hr {
-//   margin: 3rem 0;
-// }
-
 .container {
   width: 87%;
   max-width: 1100px;
   margin: 0 auto;
 }
 
+/* Nav styles that do not involve the hamburger icon/menu */
+.nav-bar {
+  min-height: 4.375em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+
+/* No logo, just text for the menu appearance */
 .logo {
   color: var(--color-dark);
   font-family: 'Dancing Script', Segoe script, cursive;
@@ -80,7 +86,7 @@ header {
   border: 1px solid transparent;
 }
 
-// Nav items
+/* Nav items */
 .nav-item {
   margin: 1em 0;
 }
@@ -110,10 +116,6 @@ header {
 }
 
 @media (min-width: 1300px) {
-  header {
-    background-color: var(--white);
-  }
-
   .container {
     width: 80%;
     max-width: 1100px;
@@ -132,5 +134,4 @@ header {
   .hamburger {
     display: none;
   }
-
 }
