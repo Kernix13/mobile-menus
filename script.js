@@ -49,8 +49,34 @@ hamburger3.addEventListener("click", () => {
 })
 
 /* MENU 4, RIGHT SIDEBAR: #nav-menu4, .#amburger4  */
+const hamburger4 = document.getElementById("hamburger4");
+const navMenu4 = document.getElementById("nav-menu4");
+
+hamburger4.addEventListener("click", () => {
+
+  /* Toggle active class */
+  hamburger4.classList.toggle("active");
+  navMenu4.classList.toggle("active");
+
+  /* Toggle aria-expanded value */
+  let menuOpen4 = navMenu4.classList.contains("active");
+  hamburger4.setAttribute("aria-expanded", menuOpen4);
+})
 
 /* MENU 5, LEFT SIDEBAR: #nav-menu5, .#amburger5  */
+const hamburger5 = document.getElementById("hamburger5");
+const navMenu5 = document.getElementById("nav-menu5");
+
+hamburger5.addEventListener("click", () => {
+
+  /* Toggle active class */
+  hamburger5.classList.toggle("active");
+  navMenu5.classList.toggle("active");
+
+  /* Toggle aria-expanded value */
+  let menuOpen5 = navMenu5.classList.contains("active");
+  hamburger5.setAttribute("aria-expanded", menuOpen4);
+})
 
 
 // close mobile menu (only useful for on page anchor links)
