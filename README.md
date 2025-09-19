@@ -34,7 +34,8 @@ All the all have "_magic_" numbers. That makes sense for all but menu 1. For men
       <nav class="nav-bar" aria-label="Main navigation">
         <span class="logo">from top</span>
 
-        <!-- I have to fix VS Code settings because I hate it when it does this to my HTML markdown blocks! -->
+        <!-- I have to fix VS Code settings because I hate it when 
+             it does this to my HTML markdown blocks! -->
         <button
           id="hamburger"
           class="hamburger"
