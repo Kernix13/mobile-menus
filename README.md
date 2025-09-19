@@ -2,17 +2,23 @@
 
 ## Brief descrition of the project
 
-The project is to create different mobile menus that are accessible. There are 5 menus on this page that will have different entrances for mobile. The menus are accessible due to toggling of the ARIA attribute <code>aria-expanded</code>. They all have "magic" numbers. That makes sense for all but menu 1. For menu 1 I think I will give the hamburger icon/button a z-index to make it appear over the menu when it comes down. The same will have to be dome for the other menus as well.
+The project is to create different mobile menus that are accessible. There are 5 menus on this page that will have different entrances for mobile. The menus are accessible due to toggling of the ARIA attribute <code>aria-expanded</code>.
+
+All the all have "_magic_" numbers. That makes sense for all but menu 1. For menu 1 I think I will give the hamburger icon/button a z-index to make it appear over the menu when it comes down. The same will have to be dome for the other menus as well.
 
 1. Mobile menu 1 comes from the top.
 2. Mobile menu 2 comes from the right.
 3. Mobile menu 3 comes from the left.
-4. Mobile menu 4: NOT WORKING - I want it to have a sidebar look that comes from the top-right
-5. Mobile menu 5: same as above but on the left
+4. Mobile menu 4: NOT WORKING - I want it to have a sidebar that enters from the top-right
+5. Mobile menu 5: same as above but on the top left
 
-> Just download the files and open `index.html` in the browser. I set the media query breakpoing high (`1300px`) so you can test the menus on desktop. Use DevTools to see the toggling of `true`/`false` for the `aria-expanded` attribute on the `<button>`.
+> NOTE: It looks like `7rem` is the number to add to the `top` property if you want to add more
 
-## Basic layouts
+- Just download the files and open `index.html` in the browser.
+- I set the media query breakpoing high (`1300px`) so you can test the menus on desktop.
+- Use DevTools to see the toggling of `true`/`false` for the `aria-expanded` attribute on the `<button>`.
+
+## Basic layout
 
 ```html
 <body>
@@ -22,7 +28,7 @@ The project is to create different mobile menus that are accessible. There are 5
   <header aria-label="top navigation bar">
     <div class="container">
       <nav class="nav-bar" aria-label="Main navigation">
-        <span id="portfolio-home" class="logo">from top</span>
+        <span class="logo">from top</span>
 
         <button
           id="hamburger"
