@@ -1,0 +1,99 @@
+/* mobile nav */
+.nav-bar {
+  min-height: 4.375em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+
+.nav-menu, .nav-menu2, .nav-menu3, .nav-menu4, .nav-menu5 {
+  position: fixed;
+  padding: 0.75rem 0;
+  flex-direction: column;
+  background-color: var(--white);
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.45);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.45);
+  transition: 750ms;
+}
+
+/* from top */
+.nav-menu {
+  left: 0;
+  top: -100%;
+}
+.nav-menu.active {
+  top: 5.5rem;
+}
+
+/* from right */
+.nav-menu2 {
+  right: -100%;
+  top: 13em;
+}
+.nav-menu2.active {
+  right: 0;
+}
+
+/* from left */
+.nav-menu3 {
+  left: -100%;
+  top: 21em;
+}
+.nav-menu3.active {
+  left: 0;
+}
+
+/* right sidebar */
+.nav-menu4 {
+  left: -100%;
+  top: 28em;
+}
+.nav-menu4.active {
+  left: 0;
+}
+
+/* left sidebar */
+.nav-menu5 {
+  left: -100%;
+  top: 35em;
+}
+.nav-menu5.active {
+  left: 0;
+}
+
+.hamburger, .hamburger2, .hamburger3, .hamburger4, .hamburger5 {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+.bar {
+  display: block;
+  background-color: #000;
+  width: 24px;
+  /* The following 2 properties are essential in creating the "X" */
+  height: 2px;
+  margin: 6px auto;
+
+  /* -webkit-transition: all 300ms ease;  */
+  transition: all 300ms ease-in-out;
+}
+
+.hamburger.active .bar:nth-child(2), .hamburger2.active .bar:nth-child(2), .hamburger3.active .bar:nth-child(2) {
+  opacity: 0
+}
+
+.hamburger.active .bar:nth-child(1), .hamburger2.active .bar:nth-child(1), .hamburger3.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3), .hamburger2.active .bar:nth-child(3), .hamburger3.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.gray {
+  background-color: #e0e7ef;
+}

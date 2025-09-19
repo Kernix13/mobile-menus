@@ -6,13 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mobile Menus</title>
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./nav.css">
 </head>
 
 <body>
+
+  <!-- from top -->
   <header aria-label="top navigation bar">
     <div class="container">
       <nav class="nav-bar" aria-label="Main navigation">
-        <span id="portfolio-home" class="logo">one</span>
+        <span id="portfolio-home" class="logo">from top</span>
 
         <button id="hamburger" class="hamburger" aria-label="open navigation" tabindex="0" aria-expanded="false">
           <span class="bar"></span>
@@ -20,7 +23,7 @@
           <span class="bar"></span>
         </button>
 
-        <ul class="nav-menu nav__list--primary">
+        <ul class="nav-menu" id="nav-menu">
           <li class="nav-item"><a href="#" class="nav-link">Link 1</a></li>
           <li class="nav-item"><a href="#" class="nav-link">Link 2</a></li>
           <li class="nav-item"><a href="#" class="nav-link">Link 3</a></li>
@@ -31,20 +34,21 @@
     </div>
   </header>
 
-  <hr>
+  <!-- <hr> -->
 
-  <header aria-label="top navigation bar">
+  <!-- from right -->
+  <header aria-label="top navigation bar" class="gray">
     <div class="container">
-      <nav class="nav-bar" aria-label="Main navigation">
-        <span id="portfolio-home" class="logo">two</span>
+      <nav class="nav-bar gray" aria-label="Main navigation">
+        <span id="portfolio-home" class="logo">from right</span>
 
-        <button id="hamburger" class="hamburger" aria-label="open navigation" tabindex="0" aria-expanded="false">
+        <button id="hamburger2" class="hamburger2" aria-label="open navigation" tabindex="0" aria-expanded="false">
           <span class="bar"></span>
           <span class="bar"></span>
           <span class="bar"></span>
         </button>
 
-        <ul class="nav-menu nav__list--primary">
+        <ul class="nav-menu2 gray" id="nav-menu2">
           <li class="nav-item"><a href="#" class="nav-link">Link 1</a></li>
           <li class="nav-item"><a href="#" class="nav-link">Link 2</a></li>
           <li class="nav-item"><a href="#" class="nav-link">Link 3</a></li>
@@ -55,20 +59,19 @@
     </div>
   </header>
 
-  <hr>
-
+  <!-- from left -->
   <header aria-label="top navigation bar">
     <div class="container">
       <nav class="nav-bar" aria-label="Main navigation">
-        <span id="portfolio-home" class="logo">three</span>
+        <span id="portfolio-home" class="logo">from left</span>
 
-        <button id="hamburger" class="hamburger" aria-label="open navigation" tabindex="0" aria-expanded="false">
+        <button id="hamburger3" class="hamburger3" aria-label="open navigation" tabindex="0" aria-expanded="false">
           <span class="bar"></span>
           <span class="bar"></span>
           <span class="bar"></span>
         </button>
 
-        <ul class="nav-menu nav__list--primary">
+        <ul class="nav-menu3" id="nav-menu3">
           <li class="nav-item"><a href="#" class="nav-link">Link 1</a></li>
           <li class="nav-item"><a href="#" class="nav-link">Link 2</a></li>
           <li class="nav-item"><a href="#" class="nav-link">Link 3</a></li>
@@ -79,20 +82,44 @@
     </div>
   </header>
 
-  <hr>
 
-  <header aria-label="top navigation bar">
+  <!-- right sidebar -->
+  <header aria-label="top navigation bar" class="gray">
     <div class="container">
-      <nav class="nav-bar" aria-label="Main navigation">
-        <span id="portfolio-home" class="logo">four</span>
+      <nav class="nav-bar gray" aria-label="Main navigation">
+        <span id="portfolio-home" class="logo">right sidebar</span>
 
-        <button id="hamburger" class="hamburger" aria-label="open navigation" tabindex="0" aria-expanded="false">
+        <button id="hamburger4" class="hamburger4" aria-label="open navigation" tabindex="0" aria-expanded="false">
           <span class="bar"></span>
           <span class="bar"></span>
           <span class="bar"></span>
         </button>
 
-        <ul class="nav-menu nav__list--primary">
+        <ul class="nav-menu4" id="nav-menu4">
+          <li class="nav-item"><a href="#" class="nav-link">Link 1</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Link 2</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Link 3</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Link 4</a></li>
+        </ul>
+
+      </nav>
+    </div>
+  </header>
+
+  <!-- <hr> -->
+
+  <header aria-label="top navigation bar">
+    <div class="container">
+      <nav class="nav-bar" aria-label="Main navigation">
+        <span id="portfolio-home" class="logo">left sidebar</span>
+
+        <button id="hamburger5" class="hamburger5" aria-label="open navigation" tabindex="0" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+
+        <ul class="nav-menu5" id="nav-menu5">
           <li class="nav-item"><a href="#" class="nav-link">Link 1</a></li>
           <li class="nav-item"><a href="#" class="nav-link">Link 2</a></li>
           <li class="nav-item"><a href="#" class="nav-link">Link 3</a></li>
