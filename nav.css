@@ -16,7 +16,7 @@
   text-align: center;
   border-top: 1px solid rgba(0, 0, 0, 0.45);
   border-bottom: 1px solid rgba(0, 0, 0, 0.45);
-  transition: 750ms;
+  transition: top 500ms ease-in-out, right 500ms ease-in-out, left 500ms ease-in-out;
 }
 
 /* from top */
@@ -79,7 +79,7 @@
   margin: 6px auto;
 
   /* -webkit-transition: all 300ms ease;  */
-  transition: all 300ms ease-in-out;
+  transition: transform 300ms ease-in-out, opacity 300ms ease-in-out;
 }
 
 .hamburger.active .bar:nth-child(2), .hamburger2.active .bar:nth-child(2), .hamburger3.active .bar:nth-child(2) {
