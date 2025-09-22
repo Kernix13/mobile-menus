@@ -42,7 +42,7 @@ h1,
 h2,
 h3 {
   color: var(--color-dark);
-  font-family: 'Lora', serif;
+  font-family: ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif;
   letter-spacing: 0.25rem;
   font-weight: 400;
   margin: 0;
@@ -76,11 +76,10 @@ header {
 /* No logo, just text for the menu appearance */
 .logo {
   color: var(--color-dark);
-  font-family: 'Dancing Script', Segoe script, cursive;
+  font-family: Segoe script, 'Brush Script MT', cursive;
   font-weight: 600;
   letter-spacing: 0.125em;
   font-size: 2rem;
-  -webkit-transition: color 500ms ease;
   transition: color 500ms ease;
   padding: 0.25em 0.5em;
   border: 1px solid transparent;
@@ -115,6 +114,7 @@ header {
   background-color: #e0e7ef;
 }
 
+/* Large breakpoint so you can view the menus on larger screens */
 @media (min-width: 1300px) {
   .container {
     width: 80%;

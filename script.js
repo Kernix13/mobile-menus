@@ -75,11 +75,11 @@ hamburger5.addEventListener("click", () => {
 
   /* Toggle aria-expanded value */
   let menuOpen5 = navMenu5.classList.contains("active");
-  hamburger5.setAttribute("aria-expanded", menuOpen4);
+  hamburger5.setAttribute("aria-expanded", menuOpen5);
 })
 
 
-// close mobile menu (only useful for on page anchor links)
+// close mobile menu (only useful for on-page anchor links)
 /*
 const navLinks = document.querySelectorAll(".nav-link");
 
