@@ -121,7 +121,7 @@ header {
     max-width: 1100px;
   }
 
-  .nav-menu {
+  .nav-menu, .nav-menu2, .nav-menu3, .nav-menu4, .nav-menu5 {
     position: static;
     display: flex;
     flex-direction: row;
@@ -131,7 +131,9 @@ header {
     width: auto;
   }
 
-  .hamburger {
+  .hamburger, .hamburger2, .hamburger3, .hamburger4, .hamburger5 {
     display: none;
+    z-index: 0;
   }
+
 }
