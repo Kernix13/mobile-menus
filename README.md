@@ -1,5 +1,9 @@
 # Accessible Mobile Menus Project
 
+I added a lot more aria attributes and more JavaScript to handle desktop menu.
+
+<!-- module1/mobile-menus -->
+
 ## Brief descrition of the project
 
 The project is to create different mobile menus that are accessible. There are 5 menus on this page that will have different entrances for mobile. The menus are accessible due to toggling of the ARIA attribute <code>aria-expanded</code>.
