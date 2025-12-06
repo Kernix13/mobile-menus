@@ -1,3 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500&family=Open+Sans:wght@400;500&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --dark: #333333;
+  --dark-gray: #666666;
+  --gray: #888888;
+  --gray2: #cccccc;
+  --gray3: #aaaaaa;
+  --purple: #5805cc;
+  --color-lite: hsl(205, 54%, 92%);
+  --color-dark: #2d3250;
+  --link-hover: #8c6a02;
+  --footer-hover: rgb(211, 157, 58);
+
+  --green: hsl(93, 86%, 51%);
+  --orange: hsl(41, 98%, 57%);
+  --red: hsl(0, 97%, 75%);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  color: var(--dark);
+  line-height: 1.5;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--color-dark);
+  font-family: ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif;
+  letter-spacing: 0.25rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  padding: 1.5rem 0;
+}
+
+.container {
+  width: 87%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Nav styles that do not involve the hamburger icon/menu */
+.nav-bar {
+  min-height: 4.375em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+
+/* No logo, just text for the menu appearance */
+.logo {
+  color: var(--color-dark);
+  font-family: Segoe script, 'Brush Script MT', cursive;
+  font-weight: 600;
+  letter-spacing: 0.125em;
+  font-size: 2rem;
+  transition: color 500ms ease;
+  padding: 0.25em 0.5em;
+  border: 1px solid transparent;
+  /*  z-index on logo is a problem unless you position your menu items to deal with that  */
+  z-index: 1;
+}
+
+/* Nav items */
+.nav-item {
+  margin: 1em 0;
+}
+
+.nav-link,
+.nav-link:visited {
+  color: var(--dark);
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 0.25em 0.5em;
+  border: 1px solid transparent;
+
+  transition: 400ms ease;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--link-hover);
+  outline: none;
+  border: 1px solid var(--link-hover);
+}
+
+.gray {
+  background-color: #e0e7ef;
+}
+
+
+
+/* THE NAV STYLES PERTAINING TO THE POINT OF THIS PEN IS BELOW HERE */
 /* mobile nav */
 .nav-menu,
 .nav-menu2,
@@ -15,11 +136,11 @@
   transition: top 500ms ease-in-out, right 500ms ease-in-out, left 500ms ease-in-out;
 }
 
-.nav-menu > *,
-.nav-menu2 > *,
-.nav-menu3 > *,
-.nav-menu4 > *,
-.nav-menu5 > * {
+.nav-menu>*,
+.nav-menu2>*,
+.nav-menu3>*,
+.nav-menu4>*,
+.nav-menu5>* {
   margin: 0.5rem 0;
 }
 
@@ -28,6 +149,7 @@
   left: 0;
   top: -100%;
 }
+
 .nav-menu.active {
   top: 0;
 }
@@ -37,6 +159,7 @@
   right: -100%;
   top: 13em;
 }
+
 .nav-menu2.active {
   right: 0;
 }
@@ -46,6 +169,7 @@
   left: -100%;
   top: 21em;
 }
+
 .nav-menu3.active {
   left: 0;
 }
@@ -60,6 +184,7 @@
   height: 50%;
   z-index: 2;
 }
+
 .nav-menu4.active {
   right: 0;
 }
@@ -72,7 +197,9 @@
   left: -100%;
   width: 7.5rem;
   height: 100%;
+  z-index: 2;
 }
+
 .nav-menu5.active {
   left: 0;
 }
@@ -108,7 +235,7 @@
 .hamburger3.active .bar:nth-child(2),
 .hamburger4.active .bar:nth-child(2),
 .hamburger5.active .bar:nth-child(2) {
-  opacity: 0
+  opacity: 0;
 }
 
 .hamburger.active .bar:nth-child(1),
@@ -129,4 +256,35 @@
 
 .gray {
   background-color: #e0e7ef;
+}
+
+/* Large breakpoint so you can view the menus on larger screens. You must update the value in matchMedia with the value you have in the media query */
+@media (min-width: 1100px) {
+  .container {
+    width: 80%;
+    max-width: 1100px;
+  }
+
+  .nav-menu,
+  .nav-menu2,
+  .nav-menu3,
+  .nav-menu4,
+  .nav-menu5 {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+    width: auto;
+  }
+
+  .hamburger,
+  .hamburger2,
+  .hamburger3,
+  .hamburger4,
+  .hamburger5 {
+    display: none;
+    z-index: 0;
+  }
 }
